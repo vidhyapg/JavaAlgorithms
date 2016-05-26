@@ -1,3 +1,5 @@
+package CCI;
+
 /**
  * Created by vppriyad on 4/9/2015.
  * cracking coding interview 1.3

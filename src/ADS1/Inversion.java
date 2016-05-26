@@ -23,8 +23,8 @@ package ADS1;
  *
  *************************************************************************/
 
-import edu.princeton.cs.introcs.StdIn;
-import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The <tt>Merge</tt> class provides static methods for sorting an

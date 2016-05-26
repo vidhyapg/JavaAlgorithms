@@ -1,17 +1,21 @@
 package Core;
 import java.security.InvalidParameterException;
 import java.util.*;
+
+import Core.PriorityQueueMaxK.Entry;
 /**
  * Created by vppriyad on 10/8/2015.
+ * Google interview
  */
 public class PriorityQueueMaxK {
 
     // extract K max elements from prorityQueue q.
+	// complexity O(k logk), at each loop, remove one and add two, so net add 1. 
     public LinkedList<Integer> extractKMax(Integer[] q, int k, int n){
         if (k > n) {
             throw new InvalidParameterException();
         }
-        PriorityQueue<Entry> candidates = new PriorityQueue();
+        PriorityQueue<Entry> candidates = new PriorityQueue<Entry>();
         LinkedList<Integer> maxList = new LinkedList<Integer>();
         int index = 1;
         candidates.add(new Entry(q[index], index));
@@ -44,7 +48,7 @@ public class PriorityQueueMaxK {
         Integer[] q1 = {0, 10, 9, 7, 8, 3, 5, 6, 1, 4};
         Integer[] q2 ={0, 10};
         PriorityQueueMaxK pqMax = new PriorityQueueMaxK();
-        System.out.println(pqMax.extractKMax(q2, 0, q2.length));
+        System.out.println(pqMax.extractKMax(q1, 4, q1.length));
     }
 
     public class Entry implements Comparator<Entry>, Comparable<Entry>{

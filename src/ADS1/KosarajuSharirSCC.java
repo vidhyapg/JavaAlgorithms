@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.Digraph;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.TransitiveClosure;
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  * Created by vppriyad on 8/6/2015.
